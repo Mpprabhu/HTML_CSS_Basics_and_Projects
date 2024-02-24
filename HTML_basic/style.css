@@ -1,0 +1,46 @@
+h1 {
+  font-size: 25px;
+  font-family: sans-serif;
+  text-align: center;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+}
+
+li {
+  font-size: 18px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+p {
+  font-size: 18px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav {
+  text-align: center;
+}
