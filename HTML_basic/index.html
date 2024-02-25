@@ -8,19 +8,19 @@
   </head>
 
   <body>
-    <header>
+    <header class="main-header">
       <h1>🔥FRONT-END DEVELOPMENT🔥</h1>
 
       <nav>
-        <a href="blog.html">Blog |</a>
-        <a href="products.html" target="_blank">Products |</a>
-        <a href="#">Flexbox |</a>
-        <a href="#">CSS Grid</a>
+        <a href="blog.html">Blog </a>
+        <a href="products.html" target="_blank">Products </a>
+        <a href="#">Flexbox </a>
+        <a href="#">Grid</a>
       </nav>
     </header>
 
     <article>
-      <header>
+      <header class="article-header">
         <h2>The Basic Language of the Web: HTML</h2>
         <img
           src="images/creator.png"
@@ -28,7 +28,7 @@
           width="100px"
           height="100px"
         />
-        <p>
+        <p id="author">
           Posted by <strong><em>Prabhu Prathaban</em></strong> on
           <b>Monday, June 21st 2027</b>
         </p>
@@ -39,6 +39,7 @@
           height="200"
         />
       </header>
+      <br />
 
       <p>
         All modern websites and web applications are built using three
@@ -51,7 +52,8 @@
       </p>
       <h3>What is HTML?🤔</h3>
       <p>
-        HTML stands for <strong>H</strong><em>yperText</em> <strong>M</strong
+        HTML stands for <strong>H</strong
+        ><em>yper<strong>T</strong><em>ext</em></em> <strong>M</strong
         ><em>arkup</em> <strong>L</strong><em>anguage</em>. It's a markup
         language that web developers use to structure and describe the content
         of a webpage (not a programming language). HTML consists of elements
@@ -59,7 +61,7 @@
         images, video, etc. Web browsers understand HTML and render HTML code as
         websites.
       </p>
-      <h3>In HTML, each element is made up of 3 parts:</h3>
+      <h3>In HTML, each element is made up of 3 parts:3️⃣</h3>
       <ol>
         <li>The Opening tag</li>
         <li>The Closing tag</li>
@@ -71,7 +73,7 @@
           >MDN Web Docs</a
         >
       </p>
-      <h3>Why should you learn HTML?</h3>
+      <h3>Why should you learn HTML?🙃</h3>
       <p>
         There are countless reasons for learning the fundamental language of the
         web. Here are 5 of them:
@@ -91,7 +93,7 @@
 
       <aside>
         <h4>Related Posts</h4>
-        <ul>
+        <ul class="related">
           <li>
             <img
               src="images/related-1.jpg"
@@ -100,7 +102,7 @@
               height="100"
             />
             <a href="#">How to learn Web Development</a>
-            <p>By the developer Prabhu</p>
+            <p class="related-author">By the developer Prabhu</p>
           </li>
 
           <li>
@@ -113,7 +115,7 @@
             <a href="https://www.youtube.com/" target="_blank"
               >Our YouTube Channel ▶️</a
             >
-            <p>By the developer Prabhu</p>
+            <p class="related-author">By the developer Karthi</p>
           </li>
 
           <li>
@@ -124,15 +126,16 @@
               height="100"
             />
             <a href="#">Learn CSS </a>
-            <p>By the developer Prabhu</p>
+            <p class="related-author">By the developer Abi</p>
           </li>
         </ul>
       </aside>
     </article>
+    <br />
 
     <footer>
       <a href="#">Back to start &uparrow;</a>
-      <p>CopyRight &copy; 2024 by Code Era</p>
+      <p id="copyright ">CopyRight &copy; 2024 by Code Era</p>
     </footer>
   </body>
 </html>
