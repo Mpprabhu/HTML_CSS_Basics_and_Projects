@@ -1,42 +1,37 @@
 body {
   border: 5px solid #1098ad;
-  border-radius: 20px;
   background-color: #111;
   color: #dfdfdf;
   font-family: courier new;
+  line-height: 1.5;
 }
 
-h1,
 h3 {
   color: #1098ad;
 }
 
-.main-heading {
-  margin-top: 0;
+h1 {
   background-color: #1098ad;
   color: #111;
   text-align: center;
 }
 
 img {
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
   border: 2px solid #1098ad5f;
 }
 
 button {
-  margin: 0px 10px 10px 20px;
   background-color: #1098ad;
   color: #111;
   font-size: 20px;
   border: 2px solid #1098ad5f;
-  border-radius: 5px;
 }
 
 button:hover {
   background-color: #dfdfdf;
   border: 2px solid #1098ad;
   color: #1098ad;
+  cursor: pointer;
 }
 
 button:active {
@@ -53,7 +48,7 @@ button:active {
 p,
 li {
   font-size: 18px;
-  line-height: 1.5;
+  list-style: square;
 }
 
 .shipping {
@@ -81,10 +76,11 @@ a:visited {
 
 a:hover {
   color: white;
-  font-weight: bold;
+  text-decoration: underline white;
 }
 
 a:active {
   font-style: normal;
   color: orangered;
+  text-decoration: none;
 }
