@@ -14,6 +14,20 @@ body {
   border: 5px solid #1098ad;
   width: 825px;
   margin: 50px auto;
+  position: relative;
+}
+
+.sale {
+  display: inline-block;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #da0000;
+  padding: 7px 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: -30px;
+  left: -30px;
 }
 
 h3 {
@@ -80,6 +94,39 @@ li {
   font-size: 15px;
   font-weight: bold;
   color: #979797;
+}
+
+.color-palette div {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.box1 {
+  background-color: red;
+}
+
+.box2 {
+  background-color: orange;
+}
+
+.box3 {
+  background-color: greenyellow;
+}
+
+.box4 {
+  background-color: sandybrown;
+}
+
+.box5 {
+  background-color: wheat;
+}
+
+.box6 {
+  background-color: blueviolet;
 }
 
 h3 {
