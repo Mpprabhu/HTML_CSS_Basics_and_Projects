@@ -24,13 +24,19 @@ h4 {
   color: #1098ad;
 }
 
+.main-header {
+  /* text-align: center; */
+  background-color: #1098ad;
+  color: #dfdfdf;
+  border-top: 5px solid #afeeee;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+
 h1 {
   font-size: 30px;
-  text-align: center;
-  background-color: #1098ad;
-  color: #111;
-  padding: 10px;
-  margin-bottom: 20px;
+  /* font-weight: bold; */
+  text-transform: uppercase;
 }
 
 h2 {
@@ -93,14 +99,25 @@ p {
 }
 
 nav {
-  text-align: center;
-  margin-bottom: 20px;
+  font-size: 20px;
+  /* text-align: center; */
+}
+
+nav a:link {
+  margin-right: 10px;
+  margin-top: 10px;
+  /* margin: 10px; */
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
 }
 
 .creator-img {
   border-radius: 500px;
   margin-bottom: 15px;
-  border: 5px solid #1098ad;
+  border: 3px solid #1098ad;
 }
 .post-img {
   width: 100%;
@@ -116,21 +133,25 @@ article header p {
   font-style: italic;
 } */
 
-nav a:link {
-  background-color: #010101;
-  padding: 12px;
-  margin: 10px;
-  display: inline-block;
-  border-radius: 10px;
-}
-
 article {
   margin-bottom: 60px;
 }
 
-#author {
+article a:link {
+  color: #afeeee;
+}
+
+article a:visited {
+  color: #afeeee;
+}
+
+article a:hover {
+  color: #dfdfdf;
+}
+
+.author {
   font-style: italic;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 #copyright {
@@ -148,7 +169,7 @@ article {
 }
 
 .article-header {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   /* position: relative; */
 }
 
@@ -180,28 +201,24 @@ li:last-child {
 }
 
 a:link {
-  color: #1098ad;
-  font-size: 22px;
+  color: #111;
   text-decoration: none;
-  font-weight: 600;
-  font-family: courier;
+  font-weight: bolder;
 }
 
 a:visited {
-  color: #1098ad;
+  color: #111;
   font-weight: bold;
 }
 
 a:hover {
   color: #dfdfdf;
   font-weight: bold;
-  background-color: #1098ad;
 }
 
 a:active {
   font-style: normal;
-  color: #107bada3;
-  background-color: #141414;
+  color: #afeeee;
 }
 
 button {
@@ -237,4 +254,30 @@ iframe {
 
 footer {
   margin-bottom: 20px;
+}
+
+/* FLOATS */
+.creator-img {
+  float: left;
+}
+
+.author {
+  float: left;
+  margin-top: 35px;
+  margin-left: 30px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+/* ClearFix Hack */
+.main-header::after {
+  content: "";
+  display: block;
+  clear: both;
 }
