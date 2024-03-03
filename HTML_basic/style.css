@@ -30,7 +30,7 @@ h4 {
   color: #dfdfdf;
   border-top: 5px solid #afeeee;
   padding: 20px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 h1 {
@@ -131,7 +131,7 @@ nav a:link:last-child {
 }
 
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 aside a:link {
@@ -356,6 +356,7 @@ footer {
   display: block;
 }
 
+/* FlexBox Layout
 .row {
   display: flex;
   gap: 75px;
@@ -363,11 +364,29 @@ footer {
   align-items: flex-start;
 }
 article {
-  /* flex: 0 1 825px; */
+  flex: 0 1 825px;
   flex: 1;
   margin-bottom: 0;
 }
 
 aside {
   flex: 0 0 300px;
+} */
+
+/* Grid Layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+footer {
+  /* background-color: #1098ad; */
+  grid-column: 1/-1;
 }
