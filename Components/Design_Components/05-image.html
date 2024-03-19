@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Image Component</title>
+
+    <style>
+      /*
+            SPACING SYSTEM (px)
+            2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+            FONT SIZE SYSTEM (px)
+            10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+            Main Color : #087f5b
+            Grey Color : #343a40
+
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Rubik", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+
+      .carousel {
+        width: 500px;
+        height: 500px;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.02)
+          ),
+          url(images/gallery-1.jpg);
+        margin: 100px auto;
+        border-radius: 20px;
+        position: relative;
+      }
+
+      .button {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.157);
+        cursor: pointer;
+      }
+
+      .button-icon {
+        width: 24px;
+        height: 24px;
+        stroke: #faa806;
+      }
+      .button--right {
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+
+      .button--left {
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .button:hover .button-icon {
+        stroke: #fff;
+      }
+
+      .button:hover {
+        background-color: #faa806;
+      }
+      .dots {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -24px);
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: none;
+        background-color: #fff;
+        border: 1px solid #faa806;
+        cursor: pointer;
+      }
+
+      .dot:hover {
+        background-color: #faa806;
+      }
+
+      .main-heading {
+        font-size: 32px;
+        padding: 30px 0;
+        color: #faa806;
+        font-weight: 600;
+      }
+
+      p,
+      span {
+        color: #fff;
+        font-size: 18px;
+        line-height: 1.2;
+      }
+
+      .text {
+        margin-left: 30px;
+        width: 350px;
+      }
+
+      .high {
+        color: #faa806;
+        font-weight: 600;
+      }
+
+      .loc {
+        background-color: #faa806;
+        display: inline-block;
+        padding: 8px;
+        border-radius: 16px;
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        cursor: pointer;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel">
+      <!-- <img src="images/maria.jpg" alt="person" /> -->
+      <div class="header">
+        <h1 class="main-heading">Ramen Noodles</h1>
+        <p class="loc">JAPAN</p>
+      </div>
+      <div class="text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+          velit?
+        </p>
+        <span class="high">Delicious</span>
+        <span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+          porro.
+        </span>
+      </div>
+
+      <button class="button button--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="button-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+
+      <button class="button button--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="button-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+      <div class="dots">
+        <button class="dot dot--fill">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
+    </div>
+  </body>
+</html>
