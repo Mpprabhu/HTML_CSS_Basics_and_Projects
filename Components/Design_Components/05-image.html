@@ -45,8 +45,13 @@
         margin: 100px auto;
         border-radius: 20px;
         position: relative;
+        filter: grayscale(1);
       }
 
+      .carousel:hover {
+        filter: none;
+        transition: all 0.7s ease-out;
+      }
       .button {
         width: 40px;
         height: 40px;
@@ -80,10 +85,12 @@
 
       .button:hover .button-icon {
         stroke: #fff;
+        transition: all 0.4s ease-out;
       }
 
       .button:hover {
         background-color: #faa806;
+        transition: all 0.4s ease-out;
       }
       .dots {
         position: absolute;
@@ -104,6 +111,7 @@
 
       .dot:hover {
         background-color: #faa806;
+        transition: all 0.4s ease-out;
       }
 
       .main-heading {
@@ -113,6 +121,12 @@
         font-weight: 600;
       }
 
+      .main-heading:hover {
+        text-shadow: 0 0 24px #faa806;
+        font-size: 38px;
+        transition: all 0.4s ease-out;
+        cursor: none;
+      }
       p,
       span {
         color: #fff;
@@ -130,14 +144,26 @@
         font-weight: 600;
       }
 
+      .high:hover {
+        text-shadow: 0 0 24px #faa806;
+        font-size: 26px;
+        transition: all 0.4s ease-out;
+        cursor: none;
+      }
+
       .loc {
         background-color: #faa806;
         display: inline-block;
-        padding: 8px;
-        border-radius: 16px;
-        font-size: 16px;
-        letter-spacing: 1.6px;
+        padding: 10px;
+        border-radius: 500px;
+        font-size: 15px;
         cursor: pointer;
+      }
+
+      .loc:hover {
+        letter-spacing: 2px;
+        box-shadow: 0 0 24px #faa806;
+        transition: all 0.4s ease-out;
       }
 
       .header {
