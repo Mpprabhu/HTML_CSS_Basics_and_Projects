@@ -18,10 +18,10 @@ para default- 1.6
 --colors
 
 Primary : #e67e22
-Tints : #fdf2e9 #fae5d3
-Shades : #cf711f
+Tints : #fdf2e9 #fae5d3 #eb984e
+Shades : #cf711f #45260a
 Accents : #2f9e44
-Greys : #555 #333
+Greys : #555 #333 #888 #767676 #6f6f6f
 
 animation time : 0.4s 0.3s 0.2s 
 
@@ -59,6 +59,10 @@ body {
   height: 2.2rem;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
 /* Reusable items------------------------------------------------- */
 
 .container {
@@ -98,6 +102,14 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5--cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-full-scale {
+  grid-column: 1/-1;
+}
+
 /* General items------------------------------------------------------------- */
 .heading-primary,
 .heading-secondary,
@@ -135,8 +147,14 @@ body {
   margin-bottom: 1.6rem;
 }
 
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
 /* Buttons and links------------------------------------------------------------- */
 
+.btn,
 .btn:link,
 .btn:visited {
   font-size: 2rem;
@@ -145,6 +163,10 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 10px;
   font-weight: 600;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 
   transition: all 0.4s;
 }
@@ -191,6 +213,16 @@ body {
   border-bottom: 1px solid transparent;
 }
 
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: inherit;
+}
+
 /* Lists in the website------------------------------------------------------------- */
 
 .list {
@@ -221,10 +253,17 @@ body {
   margin-right: 1.6rem !important;
 }
 
+.margin-bottom-sm {
+  margin-bottom: 2.4rem !important;
+}
+
 .margin-bottom-md {
   margin-bottom: 4.8rem !important;
 }
 
+.margin-top-sm {
+  margin-top: 1.8rem !important;
+}
 /* Predefined OverWrite------------------------------------------------------------- */
 
 strong {
