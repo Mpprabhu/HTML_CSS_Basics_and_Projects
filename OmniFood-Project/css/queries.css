@@ -1,0 +1,119 @@
+/* rem and em do not depend on html font-size in media queries
+1em = 1rem = 16px  rem in media queries may not accessed in some browsers */
+
+/* Below 1344px = 84rem  Smaller Laptops*/
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Below 1200px = 75rem  Landscape Tablets*/
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px = 0.5625 */
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .testimonial-name {
+    font-size: 2rem;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+/* Below 944px = 59rem  Tablets*/
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-image {
+    width: 60%;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .del-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-container {
+    padding: 9.6rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta-grid {
+    /* 3/5 = 60% (+) 2/5 = 40% => 100% */
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+}
