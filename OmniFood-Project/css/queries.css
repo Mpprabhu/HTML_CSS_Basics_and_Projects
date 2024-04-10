@@ -116,4 +116,68 @@
   .cta-form {
     grid-template-columns: 1fr;
   }
+
+  /* Mobile Navigation ++++++++++++++++++++++++++++++++++++++*/
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 5rem;
+    transition: all 0.5s ease-in-out;
+
+    /* We cannot animate with the usage of display: none */
+
+    /* correct way of hiding */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    /* correct way of hiding */
+  }
+
+  .nav-open .bg-nav-overlay {
+    display: block;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    z-index: 1;
+    transform: translateX(0);
+  }
+
+  .nav-open .close-icon {
+    display: block;
+  }
+
+  .nav-open .menu-icon {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:after {
+    display: none;
+  }
+
+  .main-nav-link:visited,
+  .main-nav-link:link {
+    font-size: 3rem;
+  }
+
+  /* Mobile Navigation ++++++++++++++++++++++++++++++++++++++*/
 }

@@ -46,6 +46,7 @@ animation time : 0.4s 0.3s 0.2s
 html {
   /* Font : 10px */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -53,6 +54,7 @@ body {
   color: #555;
   line-height: 1;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -269,4 +271,16 @@ body {
 
 strong {
   font-weight: 500;
+}
+
+/* Moblie Navigation Components-------------------------------*/
+
+.bg-nav-overlay {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
 }

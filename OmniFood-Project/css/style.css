@@ -9,6 +9,7 @@
   /* To make Sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .main-nav-list {
@@ -64,6 +65,27 @@
 .main-nav-link.nav-cta:active {
   box-shadow: 0 0 16px #e67e22;
 }
+
+/* Mobile Navigation +++++++++++++++++++++++++++++++++*/
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+
+.icon-mobile-nav {
+  font-size: 4.8rem;
+  color: #333;
+}
+
+.close-icon {
+  display: none;
+}
+
+/* Mobile Navigation +++++++++++++++++++++++++++++++++*/
 
 /* Hero Section----------------------------------------------------------------- */
 
@@ -324,18 +346,6 @@
   grid-template-columns: 1fr 1fr;
   row-gap: 4.8rem;
   column-gap: 8rem;
-}
-
-.testimonial {
-  /* background-color: #fff;
-  border-radius: 20px;
-  padding: 2rem; */
-  transition: all 0.4s;
-}
-
-.testimonial:hover {
-  transform: scale(1.2);
-  cursor: pointer;
 }
 
 .testimonials-container {
