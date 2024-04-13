@@ -538,13 +538,14 @@
                 first meal is on us!
               </p>
 
-              <form action="#" class="cta-form">
+              <form class="cta-form" name="sign-up" netlify>
                 <div>
                   <label for="name">Enter your Name</label>
                   <input
                     id="name"
                     type="text"
                     placeholder="Roronoa Zoro"
+                    name="name"
                     required
                   />
                 </div>
@@ -555,18 +556,24 @@
                     id="email"
                     type="email"
                     placeholder="zoro@onepiece.com"
+                    name="email"
                     required
                   />
                 </div>
 
                 <div>
                   <label for="date">Enter Date of Birth</label>
-                  <input type="text" id="date" placeholder="DD-MM-YYYY" />
+                  <input
+                    type="text"
+                    id="date"
+                    placeholder="DD-MM-YYYY"
+                    name="date"
+                  />
                 </div>
 
                 <div>
                   <label for="select-where">Where did you hear from us?</label>
-                  <select id="select-where" required>
+                  <select id="select-where" name="select-where" required>
                     <option value="">Please select one</option>
                     <option value="instagram">Instagram feeds</option>
                     <option value="youtube">Youtube</option>
