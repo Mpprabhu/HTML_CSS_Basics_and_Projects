@@ -1,9 +1,6 @@
-console.log("Hello World");
-
-const myName = "Prabhu Prathaban";
-const h1 = document.querySelector(".heading-primary");
-console.log(myName);
-console.log(h1);
+const description =
+  "Omnifood is an AI based software for those who doesn't eat learned and designed by Prabhu";
+console.log(description);
 
 ///////////////////////////////////////////////////////////
 // CurrentYear in Footer
@@ -20,6 +17,63 @@ const headerEl = document.querySelector(".header");
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
+
+///////////////////////////////////////////////////////////
+// Smooth Scrolling Animation
+
+const allLinks = document.querySelectorAll("a:link");
+console.log(allLinks);
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    // Scroll Back to Top
+
+    if (href == "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+    // Scroll to Other Links
+
+    if (href != "#" && href.startsWith("#")) {
+      const SectionEl = document.querySelector(href);
+      SectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Close Mobile Navigation via clicking link
+
+    if (link.classList.contains("main-nav-link"))
+      headerEl.classList.toggle("nav-open");
+  });
+});
+
+///////////////////////////////////////////////////////////
+// Sticky Navigation
+
+const sectionHeroEl = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // Inside of viewport null-->viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px", //should be in px
+  }
+);
+obs.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions

@@ -47,6 +47,7 @@ html {
   /* Font : 10px */
   font-size: 62.5%;
   overflow-x: hidden;
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -61,10 +62,11 @@ body {
   height: 2.2rem;
 }
 
-*:focus {
+*:focus-visible {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
+
 /* Reusable items------------------------------------------------- */
 
 .container {
