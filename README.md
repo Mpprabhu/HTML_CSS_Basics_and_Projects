@@ -1,4 +1,4 @@
-# HTML_CSS_BASICS_AND_PROJECTS
+# HTML-CSS
 
 ## Projects
 
@@ -6,3 +6,11 @@
 -  Done Chair Project based on Rules in web Design and Personalities
 -  Completed a full-fledged page called Omnifood with deployment in Netlify
 -  Omnifood Link --> https://omnifood-ai-prabhu.netlify.app/
+
+  
+## Other
+
+-  Tested and created some useful design components
+-  components: carousel, image preview, page indication and other
+-  Implemented gap property in JS for older versions of Edge and Safari
+
